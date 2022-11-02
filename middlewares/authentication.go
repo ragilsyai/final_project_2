@@ -1,7 +1,7 @@
 package middlewares
 
 import (
-	"FP2/helpers"
+	"final_project_2/helpers"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
