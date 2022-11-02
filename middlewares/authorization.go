@@ -1,9 +1,9 @@
 package middlewares
 
 import (
-	"final_project_2/config"
-	"final_project_2/database"
-	"final_project_2/models"
+	"FP2/config"
+	"FP2/database"
+	"FP2/models"
 	"net/http"
 	"strconv"
 

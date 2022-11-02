@@ -1,7 +1,7 @@
 package database
 
 import (
-	"final_project_2/models"
+	"FP2/models"
 	"fmt"
 	"log"
 
