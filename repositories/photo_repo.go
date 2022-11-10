@@ -53,13 +53,11 @@ func (pr *PhotoRepo) GetAllPhoto(c *gin.Context) ([]models.Photo, error) {
 	Photo := models.Photo{}
 	UserID := uint(userData["id"].(float64))
 
-	var GetUser = []models.User{}
-	pr.db.Model(&models.User{}).Select("users.*").Joins("join photos on photos.user_id = users.id ").Scan(&GetUser)
 	Photo.UserID = UserID
-	Photo.User = GetUser
 
 	var GetAllPhoto = []models.Photo{}
-	err := pr.db.Model(&models.Photo{}).Find(&GetAllPhoto).Error
+	// err := pr.db.Model(&models.Photo{}).Find(&GetAllPhoto).Error
+	err := pr.db.Preload("User").Find(&GetAllPhoto).Error
 	fmt.Println(err)
 	return GetAllPhoto, err
 }
