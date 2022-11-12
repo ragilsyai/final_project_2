@@ -10,7 +10,7 @@ import (
 )
 
 func DBinit(dbHost, dbPort, dbUsername, dbPassword, dbName string) *gorm.DB {
-	dsn := fmt.Sprintf("%s:@tcp(%s:%s)/%s?charset=utf8&parseTime=True", dbUsername, dbHost, dbPort, dbName)
+	dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?charset=utf8&parseTime=True", dbUsername, dbPassword, dbHost, dbPort, dbName)
 
 	fmt.Println(dsn)
 	db, err := gorm.Open("mysql", dsn)
