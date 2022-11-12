@@ -1,8 +1,6 @@
 #ini adalah Final Project 2 Golang Studi Independen, yaitu membuat rest API bernama MyGram, yang dimana pada aplikasi ini kita dapat menyimpan foto maupun membuat comment untuk foto orang lain. project ini mengunakan gorm, gin, dan juga database mysql.
 
-##Sebelum menjalankan rest API-nya, file env.example harus direname dulu menjadi .env
-
-###Untuk menggunakannya, bisa dengan aplikasi postman atau insomnia. Lalu menulisakan alamat atau url https://finalproject2-production-18f3.up.railway.app/
+##Untuk menggunakannya, bisa dengan aplikasi postman atau insomnia. Lalu menulisakan alamat atau url https://finalproject2-production-18f3.up.railway.app/
 
 #Sebelum melakukan perintah CRUD, diharuskan untuk melakukan POST register terlebih dahulu pada url https://finalproject2-production-18f3.up.railway.app/users/register
 -Saat melakukan register, diperlukan username, email, password, dan age yang harus diisi dengan form,
@@ -41,7 +39,7 @@ untuk melakukan DELETE atau menghapus photo bisa dengan menambahkan photoId dibe
 
 // endpoint Comment
 
-untuk melakukan POST atau menginsert comment, bisa dengan url http://localhost:5000/comments/create-comment lalu memasukkan data seperti "message", "photo_id" dengan form, 
+untuk melakukan POST atau menginsert comment, bisa dengan url https://finalproject2-production-18f3.up.railway.app/comments/create-comment lalu memasukkan data seperti "message", "photo_id" dengan form, 
 dan juga bisa input menggunakan syntax json pada bagian body, misalnya : 
 {
     "message":"Gaya euy", 
@@ -57,15 +55,22 @@ untuk melakukan DELETE atau menghapus comment bisa dengan menambahkan commentId 
 
 // endpoint socialmedia
 
-untuk melakukan POST atau menginsert  socialmedia, bisa dengan url http://localhost:5000/socialmedias/create-sosmed lalu memasukkan data seperti "name", "social_media_url" dengan form, 
+untuk melakukan POST atau menginsert  socialmedia, bisa dengan url https://finalproject2-production-18f3.up.railway.app/socialmedias/create-sosmed lalu memasukkan data seperti "name", "social_media_url" dengan form, 
 dan juga bisa input menggunakan syntax json pada bagian body, misalnya : 
 {
     "name":"@fajrian_nu1", 
     "social_media_url": "www. instagram.com", 
 }
 
-untuk melakukan GET atau melihat socialmedia, bisa dengan url http://localhost:5000/socialmedias/
+untuk melakukan GET atau melihat socialmedia, bisa dengan url https://finalproject2-production-18f3.up.railway.app/socialmedias/
 
-untuk melakukan PUT atau mengupdate socialmedias, bisa dengan menambahkan socialMediaId dibelakang url, misalnya untuk mengubah socialmedia dengan id 3, maka urlnya http://localhost:5000/socialmedias/update-sosmed/3
+untuk melakukan PUT atau mengupdate socialmedias, bisa dengan menambahkan socialMediaId dibelakang url, misalnya untuk mengubah socialmedia dengan id 3, maka urlnya https://finalproject2-production-18f3.up.railway.app/socialmedias/update-sosmed/3
 
-untuk melakukan DELETE atau menghapus socialmedias bisa dengan menambahkan socialMediaId dibelakang url, misalnya jika ingin menghapus socialmedia dengan id 4, maka urlnya http://localhost:5000/socialmedias/delete-sosmed/4
+untuk melakukan DELETE atau menghapus socialmedias bisa dengan menambahkan socialMediaId dibelakang url, misalnya jika ingin menghapus socialmedia dengan id 4, maka urlnya https://finalproject2-production-18f3.up.railway.app/socialmedias/delete-sosmed/4
+
+BUGS :
+validation email haru unique index belum berhasil
+
+
+
+
