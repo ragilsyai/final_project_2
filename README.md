@@ -2,9 +2,9 @@
 
 ##Sebelum menjalankan rest API-nya, file env.example harus direname dulu menjadi .env
 
-###Untuk menggunakannya, bisa dengan aplikasi postman atau insomnia. Lalu menulisakan alamat atau url http://localhost:5000/
+###Untuk menggunakannya, bisa dengan aplikasi postman atau insomnia. Lalu menulisakan alamat atau url https://finalproject2-production-18f3.up.railway.app/
 
-#Sebelum melakukan perintah CRUD, diharuskan untuk melakukan POST register terlebih dahulu pada url http://localhost:5000/users/register
+#Sebelum melakukan perintah CRUD, diharuskan untuk melakukan POST register terlebih dahulu pada url https://finalproject2-production-18f3.up.railway.app/users/register
 -Saat melakukan register, diperlukan username, email, password, dan age yang harus diisi dengan form,
 selain dengan form register juga bisa diisi menggunakan syntax json pada bagian body. Misalnya : 
 { 
@@ -14,17 +14,17 @@ selain dengan form register juga bisa diisi menggunakan syntax json pada bagian 
     "age" : 14
 }
 
-#setelah melakukan register, user harus melakukan login pada url atau http://localhost:5000/users/login di postman atau insomnia 
+#setelah melakukan register, user harus melakukan login pada url atau https://finalproject2-production-18f3.up.railway.app/users/login di postman atau insomnia 
 
 Untuk melakukan login cukup dengan mengisikan email dan password. Lalu token pada bagian response nya harus di-copy untuk melakukan perintah CRUD
-#Untuk melakukan perintah pada user, seperti Update dan Delete user bisa dengan melakukan Request PUT pada url http://localhost:5000/update-user/:penggunaId
-dan Request DELETE pada url http://localhost:5000/delete-user/:penggunaId
+#Untuk melakukan perintah pada user, seperti Update dan Delete user bisa dengan melakukan Request PUT pada url https://finalproject2-production-18f3.up.railway.app/update-user/:penggunaId
+dan Request DELETE pada url https://finalproject2-production-18f3.up.railway.app/delete-user/:penggunaId
 
 #Perintah yang bisa dilakukan, yaitu POST, PUT, GET, dan DELETE. Tetapi sebelum itu, pada bagian Header wajib ditambahkan "Authorization" dan memasukkan token yang telah didapat dari login tadi agar perintahnya berjalan.
 
 // endpoint Photos
 
-untuk melakukan POST atau menginsert Photo, bisa dengan url http://localhost:5000/photos/create-photo lalu memasukkan data seperti "title", "caption", "photo_url" dengan form, 
+untuk melakukan POST atau menginsert Photo, bisa dengan url https://finalproject2-production-18f3.up.railway.app/photos/create-photo lalu memasukkan data seperti "title", "caption", "photo_url" dengan form, 
 dan juga bisa input menggunakan syntax json pada bagian body, misalnya : 
 {
     "title":"Photo Dufan", 
@@ -32,11 +32,11 @@ dan juga bisa input menggunakan syntax json pada bagian body, misalnya :
     "photo_url":"www.photo.com" 
 }
 
-untuk melakukan GET atau melihat photo, bisa dengan url http://localhost:5000/photos/
+untuk melakukan GET atau melihat photo, bisa dengan url https://finalproject2-production-18f3.up.railway.app/photos/
 
-untuk melakukan PUT atau mengupdate photo, bisa dengan menambahkan photoId dibelakang url, misalnya untuk mengubah photo dengan id 3, maka urlnya http://localhost:5000/photos/update-photo/3
+untuk melakukan PUT atau mengupdate photo, bisa dengan menambahkan photoId dibelakang url, misalnya untuk mengubah photo dengan id 3, maka urlnya https://finalproject2-production-18f3.up.railway.app/photos/update-photo/3
 
-untuk melakukan DELETE atau menghapus photo bisa dengan menambahkan photoId dibelakang url, misalnya jika ingin menghapus photo dengan id 4, maka urlnya http://localhost:5000/photos/delete-photo/4
+untuk melakukan DELETE atau menghapus photo bisa dengan menambahkan photoId dibelakang url, misalnya jika ingin menghapus photo dengan id 4, maka urlnya https://finalproject2-production-18f3.up.railway.app/photos/delete-photo/4
 
 
 // endpoint Comment
@@ -48,11 +48,11 @@ dan juga bisa input menggunakan syntax json pada bagian body, misalnya :
     "photo_id": 1, 
 }
 
-untuk melakukan GET atau melihat comment, bisa dengan url http://localhost:5000/comments/
+untuk melakukan GET atau melihat comment, bisa dengan url https://finalproject2-production-18f3.up.railway.app/comments/
 
-untuk melakukan PUT atau mengupdate comment, bisa dengan menambahkan commentId dibelakang url, misalnya untuk mengubah comment dengan id 3, maka urlnya http://localhost:5000/comments/update-comment/3
+untuk melakukan PUT atau mengupdate comment, bisa dengan menambahkan commentId dibelakang url, misalnya untuk mengubah comment dengan id 3, maka urlnya https://finalproject2-production-18f3.up.railway.app/comments/update-comment/3
 
-untuk melakukan DELETE atau menghapus comment bisa dengan menambahkan commentId dibelakang url, misalnya jika ingin menghapus comment dengan id 4, maka urlnya http://localhost:5000/comments/delete-comment/4
+untuk melakukan DELETE atau menghapus comment bisa dengan menambahkan commentId dibelakang url, misalnya jika ingin menghapus comment dengan id 4, maka urlnya https://finalproject2-production-18f3.up.railway.app/comments/delete-comment/4
 
 
 // endpoint socialmedia
