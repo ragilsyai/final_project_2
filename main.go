@@ -9,6 +9,6 @@ import (
 
 func main() {
 	r := router.StartAPP()
-	port := os.Getenv("SERVICE_PORT")
-	r.Run(port)
+	PORT := os.Getenv("MYSQLPORT")
+	r.Run(":" + PORT)
 }
